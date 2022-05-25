@@ -1,0 +1,161 @@
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: 'verdana';
+    font-weight: bold;
+    color: #000;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /*
+    Calculator styles
+  */
+  
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 계산기 꾸미기 */
+  .calculator {
+    background-color: #ffffff;
+    box-shadow: 3px 3px 10px 4px #C1C4C6;
+    
+    border-radius: 10px;
+    padding: 30px 20px;
+    
+    width: 300px;
+    height: 450px; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+   /* 출력되지 않는 부분 */
+  .calculator__display--bare {
+    display: none; 
+    background-color: #F2EEE4;
+    text-align: center;
+    vertical-align: middle;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 25px 15px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+  }
+  
+  /* 계산 화면 숫자 꾸미기 */
+  .calculator__display--bare > span {
+    display: inline-block;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 5px;
+    width: 40px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 5px;
+  }
+
+   /* 계산 화면 꾸미기 */
+  .calculator__display--for-advanced {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 6px 1px #0000003b inset;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: right;
+    vertical-align: middle;
+    padding: 25px 15px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+  }
+  
+
+  /* 버튼 화면 꾸미기 */
+  .calculator__buttons {
+    background-color: #ffffff;
+    width: 250px;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+    /* 버튼 꾸미기 시작 */
+  .clear__and__enter {
+    height: 50px;
+    margin: 10px;
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+  }
+  
+  .clear__and__enter > button {
+    border-radius: 10px;
+    margin: 0px 5px;
+    background: linear-gradient(60deg, #e1e1e12b, #ffffff);
+    box-shadow: 1px 1px 2px 1px #0000003a;
+    cursor: pointer;
+    outline: none;
+    flex: 3;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.216);
+  }
+  
+  .button__row {
+    height: 50px;
+    margin: 10px;
+    background-color: #ffffff;  
+    display: flex;
+    width: 100%;
+  }
+  
+  .button__row > button {
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(45deg, #f4f3f32b, #ffffff);
+    background-color: #4bc68a;
+    box-shadow: 1px 1px 3px 2px #9c9c9c43 inset; 
+    flex: 1;
+    text-shadow: 0 1px 1px #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  
+  .button__row > .operator {
+    background: linear-gradient(60deg, #5d5d5dc4, #ffffff);
+    background-color: #7aa9ef99;
+  }
+  
+  .button__row > .double {
+    width: 115px;
+    flex: 2;
+  }
+  
+  .button__row > .isPressed {
+    background-color: #77c555;
+  }
+  
+  .logo {
+    position: fixed;
+    padding: 30px;
+    bottom: 0px;
+    right: 0px;
+  }
